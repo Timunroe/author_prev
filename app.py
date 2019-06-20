@@ -1,5 +1,4 @@
 from bottle import Bottle, run, template
-import functools
 
 
 # [__VARIABLES__]
