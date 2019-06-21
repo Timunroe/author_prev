@@ -1,4 +1,9 @@
-from bottle import Bottle, run, template
+# system imports
+# import importlib
+# from string import Template
+# 3rd party
+from bottle import template
+from bullet import Bullet
 
 
 # [__VARIABLES__]
@@ -32,6 +37,10 @@ data = {
     }
 }
 
+script = f'''
+
+'''
+
 
 # [__HELPER FUNCTIONS__]
 
@@ -50,13 +59,3 @@ data = {
 
 # [__MAIN __]
 
-app = Bottle()
-
-name = "Fred"
-
-@app.route('/hello')
-def hello():
-    return template('test.html', name=name)
-
-
-run(app, host='localhost', port=8080, debug=True, reloader=True)
