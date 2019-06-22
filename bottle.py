@@ -4075,7 +4075,7 @@ class StplParser(object):
     _re_inl = '(?mx)' + _re_inl
 
 
-    default_syntax = '<% %> % [[ ]]' # Easier if javscript in template
+    default_syntax = '<# #> % [[ ]]' # Easier if javscript in template
     # default_syntax = '<% %> % {{ }}'
 
     def __init__(self, source, syntax=None, encoding='utf8'):
